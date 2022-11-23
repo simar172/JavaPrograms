@@ -1,0 +1,15 @@
+package palin;
+
+public class dup {
+	static int arr[]= {'s','i','m', 'a','r'};
+static void test() {
+	if(arr[0]=='s') {
+		;
+	}
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+           test();
+	}
+
+}

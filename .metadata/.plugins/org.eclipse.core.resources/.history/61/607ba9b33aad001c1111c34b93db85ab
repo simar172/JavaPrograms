@@ -1,0 +1,19 @@
+package recur;
+//eh vala ratto kisi vi tran
+//ehdi time complexity ayegi O(2^n) yaad kr len
+public class subsequences {
+    static void a(String s,int idx,String n) {
+    	if(idx==s.length()) {
+    		System.out.println(n);
+    		return;
+    	}
+    	char curchar=s.charAt(idx);
+    	a(s,idx+1,n+curchar);
+    	a(s,idx+1,n);
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        a("aaa",0,"");
+	}
+
+}

@@ -1,0 +1,56 @@
+package datastr;
+
+import java.util.LinkedList;
+
+import datastr.LL.Node;
+
+//import dsaques.RemoveNthNodeFromEndofList.ListNode;
+
+public class Floydalgoofdetectingloops {
+	static ListNode head;
+	public class ListNode {
+	      int val;
+	      ListNode next;
+	      ListNode() {
+	    	  
+	      }
+	      ListNode(int val){
+	       this.val = val;
+	      }
+	      ListNode(int val, ListNode next) { 
+	    	  this.val = val; 
+	    	  this.next = next; 
+	    	  }
+	  }
+	public void addFirst(int data) {
+   	 ListNode newnode=new ListNode(data);
+   	 if(head==null) {
+   		 head=newnode;
+   		 return;
+   	 }
+   	 newnode.next=head;
+   	 head=newnode;
+    }
+	public static boolean hasCycle(ListNode head) {
+		ListNode slow = head;
+		ListNode fast = head;
+		while(fast != null && fast.next != null) {
+		slow = slow.next;
+		fast = fast.next.next;
+		if(fast == slow) {
+		return true;
+		}
+		}
+		return false;
+}
+	public static void main(String[] args) {
+		LinkedList a1=new LinkedList();
+		 a1.add(20);
+		 a1.add(4);
+		 a1.add(15);
+		 a1.add(10);
+//		 a1.addFirst(1);
+		 System.out.println(head);
+		System.out.println(hasCycle(head));
+	}
+}

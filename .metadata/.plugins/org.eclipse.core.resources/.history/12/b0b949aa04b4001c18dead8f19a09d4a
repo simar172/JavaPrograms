@@ -1,0 +1,10 @@
+package datastr;
+
+public class countd_distinctelements_in_everywindowofsizek {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

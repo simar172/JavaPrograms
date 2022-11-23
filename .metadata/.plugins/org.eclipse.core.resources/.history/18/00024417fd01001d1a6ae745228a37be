@@ -1,0 +1,51 @@
+package datastr;
+
+import java.util.Scanner;
+
+public class cal {
+
+	public static void main(String args[]) {
+		Scanner s = new Scanner(System.in);
+		do {
+		
+		int a = s.nextInt();
+		int b = s.nextInt();
+
+		String c = s.next();
+		switch (c) {
+		case "+": {
+			int e = a + b;
+			System.out.println(e);
+			break;
+		}
+		case "-": {
+			int e = a - b;
+			System.out.println(e);
+			break;
+		}
+		case "/": {
+			int e = a / b;
+			System.out.println(e);
+			break;
+		}
+		case "*": {
+			int e = a * b;
+			System.out.println(e);
+			break;
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: ");
+		}
+		
+       
+      
+       }
+		System.out.println("do you want to continue");
+	       String yn=s.next();
+	       while(yn.equals("y"));
+		
+        
+
+       
+	}
+}

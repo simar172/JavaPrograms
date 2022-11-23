@@ -1,0 +1,49 @@
+ package datastr;
+
+public class binsearch {
+     public static int bin(int arr[],int key) {
+    	 int low=0;
+    	 int high=arr.length-1;
+    	 while(low<=high) {
+    		 int mid=(low+high)/2;
+    		 if(arr[mid]<key) {
+    			 low=mid+1;
+    		 }
+    		 else if(arr[mid]==key) {
+    			 return mid;
+    		 }
+    		 else {
+    			 high=mid-1;
+    		 }
+    	 }
+		return -1;
+     }
+     public static int rec(int arr[],int key,int low,int high) {
+    	if(low>high){
+    	return -1;	
+    	}
+    	
+    		int mid=(low+high)/2;
+    		if(arr[mid]<key) {
+    			return rec(arr, key, mid+1, high);
+    		}
+    		if(arr[mid]==key) {
+    			return mid;
+    		}
+    		else {
+    			return rec(arr, key, low, mid-1);
+    		}
+    	
+	 
+     }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        int arr[]= {1,2,3,4,5,6,7};
+        int key=7;
+        int low=0;
+        int high=arr.length-1;
+        System.out.println(bin(arr, key));
+        System.out.println(rec(arr, key, low,high));
+	}
+
+}

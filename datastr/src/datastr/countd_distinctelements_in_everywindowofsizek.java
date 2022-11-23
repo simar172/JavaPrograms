@@ -1,0 +1,29 @@
+package datastr;
+
+import java.util.HashMap;
+
+public class countd_distinctelements_in_everywindowofsizek {
+    public static void distinct(int arr[],int key) {
+    HashMap<Integer,Integer> a=new HashMap<Integer,Integer>();
+    	for(int i=0;i<key;i++) {
+    		a.put(arr[i], a.getOrDefault(arr[i], 0)+1);
+    	}
+    	System.out.println(a.size());
+    	for(int i=key;i<arr.length;i++) {
+    		if(a.get(arr[i-key])==1) {
+    			a.remove(arr[i-key]);
+    		}
+    		else {
+    			a.put(arr[i-key], a.get(arr[i-key])-1);
+    		}
+    		a.put(arr[i],a.getOrDefault(arr[i],0 )+1);
+    		System.out.println(a.size());
+    	}
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          int arr[]= {1,2,2,1,3,1,1,3};
+          distinct(arr, 4);
+	}
+
+}

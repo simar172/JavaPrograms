@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;datastr.count_distinct_elements&apos; to &apos;Hashset_questions&apos;&#x0D;&#x0A;- Original project: &apos;datastr&apos;&#x0D;&#x0A;- Original element: &apos;datastr.count_distinct_elements&apos;&#x0D;&#x0A;- Renamed element: &apos;datastr.Hashset_questions&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;count_distinct_elements&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;datastr{count_distinct_elements.java[count_distinct_elements" matchStrategy="1" name="Hashset_questions" qualified="false" references="true" similarDeclarations="false" stamp="1650306603252" textual="false" version="1.0"/>
+</session>

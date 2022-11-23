@@ -1,0 +1,25 @@
+package palin;
+
+public class buble {
+//        static void p(int a[]) {
+//        	for(int i=0;i<a.length;i++) {
+//        		System.out.print(a[i]);
+//        	}
+//        }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          int a[]= {3,1,3,4,2};
+          for(int i=0;i<a.length-1;i++) {
+        	  for(int j=0;j<a.length-1;j++) {
+        		  if(a[i]==a[j+1]) {
+        		  int temp=a[j+1];
+        		  a[j+1]=a[j];
+        		  a[j]=temp;
+        		  System.out.println(temp);
+        	  
+          }
+        	  }}
+         }
+	
+
+}

@@ -1,0 +1,19 @@
+package datastr;
+
+import java.util.*;
+
+public class count_distinct_elements {
+      static int distinct_elements(int arr[]) {
+    	  Set<Integer> a=new HashSet<>();
+    	  for(int b:arr) {
+    		  a.add(b);
+    	  }
+		return a.size();
+      }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          int arr[]= {5,10,15,5,4};
+          System.out.println(distinct_elements(arr));
+	}
+
+}
